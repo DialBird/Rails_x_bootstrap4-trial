@@ -14,6 +14,8 @@ gem 'therubyracer', platforms: :ruby
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+gem 'jquery-rails'
+gem 'bootstrap'
 # gem 'redis', '~> 4.0'
 # gem 'bcrypt', '~> 3.1.7'
 

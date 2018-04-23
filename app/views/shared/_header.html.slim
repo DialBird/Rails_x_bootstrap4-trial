@@ -1,7 +1,7 @@
 header
   nav.navbar.navbar-expand-md.navbar-light.bg-light
-    = link_to 'Brand', '#', class: 'navbar-brand'
-    button.navbar-toggler[type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"]
+    a.navbar-brand[href="#"] Brand
+    button.navbar-toggler[type="button" data-toggle="collapse" data-target="#navbarCollapse"]
       span.navbar-toggler-icon
     #navbarCollapse.collapse.navbar-collapse
       ul.navbar-nav.mr-auto
@@ -12,10 +12,9 @@ header
         li.nav-item
           = link_to 'Disabled', '#', class: 'nav-link disabled'
         li.nav-item.dropdown
-          = link_to 'Dropdown', '#', id: 'navbarDropdownMenuLink', class: 'nav-link dropdown-toggle', data: { toggle: 'dropdown' },  aria: { haspopup: true }
-          .dropdown-menu[aria-labelledby="navbarDropdownMenuLink"]
+          = link_to 'Dropdown', '#', class: 'nav-link dropdown-toggle', data: { toggle: 'dropdown' }
+          .dropdown-menu
             = link_to 'Second Home', second_home_path, class: 'dropdown-item'
-            a.dropdown-item[href="#"]
-              | Another action
+            a.dropdown-item[href="#"] Another action
       .navbar-nav
         = link_to 'Sign In', '#', class: 'btn btn-outline-success'

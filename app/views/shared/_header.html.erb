@@ -1,0 +1,36 @@
+<header>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <%= link_to 'Brand', '#', class: 'navbar-brand' %>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <!-- <div class="navbar&#45;nav mr&#45;auto"> -->
+        <%# <%= link_to 'Home', '#', class: 'nav-item nav-link active' %>
+        <%# <%= link_to 'Link', '#', class: 'nav-item nav-link' %>
+        <%# <%= link_to 'Disabled', '#', class: 'nav-item nav-link disabled' %>
+      <!-- </div> -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <%= link_to 'Home', '#', class: 'nav-link active' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Link', '#', class: 'nav-link' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Disabled', '#', class: 'nav-link disabled' %>
+        </li>
+        <li class="nav-item dropdown">
+          <%= link_to 'Dropdown', '#', id: 'navbarDropdownMenuLink', class: 'nav-link dropdown-toggle', data: { toggle: 'dropdown' },  aria: { haspopup: true } %>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+          </div>
+        </li>
+      </ul>
+      <div class="navbar-nav">
+        <%= link_to 'Sign In', '#', class: 'btn btn-outline-success' %>
+      </div>
+    </div>
+  </nav>
+</header>

@@ -15,6 +15,6 @@ header
           = link_to 'Dropdown', '#', class: 'nav-link dropdown-toggle', data: { toggle: 'dropdown' }
           .dropdown-menu
             = link_to 'Second Home', second_home_path, class: 'dropdown-item'
-            a.dropdown-item[href="#"] Another action
+            = link_to 'Third Home', third_home_path, class: 'dropdown-item'
       .navbar-nav
         = link_to 'Sign In', '#', class: 'btn btn-outline-success'

@@ -1,3 +1,8 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+$ ->
+  $forms = $('.needs-validation')
+  for form in $forms
+    $(form).on 'submit', (e) ->
+      if form.checkValidity() == false
+        e.preventDefault()
+        e.stopPropagation()
+      $(form).addClass('was-validated')

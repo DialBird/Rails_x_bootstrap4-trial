@@ -8,6 +8,7 @@ header.mb-3
         = link_to 'Home', '#', class: 'nav-item nav-link active'
         = link_to 'Link', '#', class: 'nav-item nav-link'
         = link_to 'First Home', root_path, class: 'nav-item nav-link'
+        = link_to 'Third Home', third_home_path, class: 'nav-item nav-link'
       = form_tag '#', class: 'form-inline mt-2' do
         = text_field_tag 'search', '', class: 'form-control mr-sm-2', placeholder: 'Search'
         = submit_tag 'Search', class: 'btn btn-outline-success my-2 my-sm-0'

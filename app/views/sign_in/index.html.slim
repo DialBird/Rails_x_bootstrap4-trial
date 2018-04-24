@@ -1,0 +1,6 @@
+.text-center
+  form.form-signin
+    = image_tag 'https://getbootstrap.com/assets/brand/bootstrap-solid.svg', size: '72x72', class: 'd-block mx-auto mb-4'
+    h1.mb-3 Please sign in
+    = email_field_tag :email, '', id: 'inputEmail', class: 'form-control', placeholder: 'Email address', required: true
+    = password_field_tag :password, '', id: 'inputPassword', class: 'form-control', placeholder: 'Password', required: true
